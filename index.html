@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Civilizations</title>
+    <style>
+        /* Add your custom splash screen styles here */
+        body {
+            background-color: #000000; /* Set background color */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide scrollbars */
+        }
+        .splash-image {
+            width: 100vw; /* Set width to cover entire viewport width */
+            height: 100vh; /* Set height to cover entire viewport height */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+        }
+        .loading-text {
+            position: fixed; /* Position loading text fixed to the screen */
+            top: 50%; /* Center loading text vertically */
+            left: 50%; /* Center loading text horizontally */
+            transform: translate(-50%, -50%); /* Center loading text */
+            font-size: 24px; /* Set font size for loading text */
+            color: #FFFFFF; /* Set text color to white */
+            font-family: 'MedievalFont', serif; /* Use medieval-themed font */
+            text-align: center; /* Center align text */
+        }
+        .loading-tip {
+            position: fixed; /* Position loading tips fixed to the screen */
+            bottom: 20px; /* Add margin to separate from bottom */
+            left: 50%; /* Center loading tips horizontally */
+            transform: translateX(-50%); /* Center loading tips */
+            font-size: 18px; /* Set font size for loading tips */
+            color: #FFFFFF; /* Set text color to white */
+            font-family: 'MedievalFont', serif; /* Use medieval-themed font */
+            text-align: center; /* Center align text */
+        }
+    </style>
+    <!-- Include MedievalFont -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap">
+</head>
+<body>
+    <!-- Add your splash screen content here -->
+    <!-- Splash screen image -->
+    <img class="splash-image" src="splash-mobile.jpg" alt="Splash Image">
+    <script>
+        // After a certain delay (e.g., 3 seconds), redirect to the main game HTML file
+        setTimeout(function() {
+            window.location.href = "launcher.html"; // Replace "index.html" with the filename of your main game HTML file
+        }, 3000); // Change the delay time (in milliseconds) as needed
+    </script>
+</body>
+</html>
